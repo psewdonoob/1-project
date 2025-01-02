@@ -5732,8 +5732,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlaneRigidbody: {fileID: 902305163}
   planeLiftStrength: 9
-  logic: {fileID: 0}
+  logic: {fileID: 849264096}
   isAlive: 1
+  moveSpeed: 1
 --- !u!61 &902305165
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5928,7 +5929,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Rock: {fileID: 709410341678979306, guid: 3fe2ba2875f753d4983c183e50dbe55d, type: 3}
   spawnRate: 2
-  heightOffset: 3.5
+  heightOffset: 3
 --- !u!4 &1118086282
 Transform:
   m_ObjectHideFlags: 0
@@ -5938,7 +5939,7 @@ Transform:
   m_GameObject: {fileID: 1118086280}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.46, y: -0.3774643, z: 0}
+  m_LocalPosition: {x: 10.46, y: 1.85, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
