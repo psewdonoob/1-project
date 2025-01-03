@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class RockMoveScript : MonoBehaviour
+public class NitroMoveScript : MonoBehaviour
 {
     public float moveSpeed = 5;
     public float deadZone = -12;
@@ -8,7 +8,7 @@ public class RockMoveScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -16,10 +16,9 @@ public class RockMoveScript : MonoBehaviour
     {
         transform.position = transform.position + (Vector3.left * moveSpeed) * Time.deltaTime;
 
-        if(transform.position.x <= deadZone)
-        {            
+        if (transform.position.x <= deadZone)
+        {
             Destroy(gameObject);
-            //Debug.Log("Rock deleted");
         }
     }
 }

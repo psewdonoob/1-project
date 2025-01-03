@@ -3,16 +3,16 @@ using UnityEngine;
 public class RockSpawnerScript : MonoBehaviour
 {
     public GameObject Rock;
-
+    public int RockCount = 0;
     public float spawnRate = 2;
-    private float timer = 0;
+    public float timer = 0;
 
     public float heightOffset = 10;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //spawnPipe();
+        //spawnRock();
     }
 
     // Update is called once per frame
@@ -24,12 +24,12 @@ public class RockSpawnerScript : MonoBehaviour
         }
         else 
         {
-            spawnPipe();
+            spawnRock();
             timer = 0;
         }
     }
 
-    void spawnPipe()
+    void spawnRock()
     {
         float minHeight = transform.position.y - heightOffset;
         float maxHeight = transform.position.y + heightOffset;
@@ -39,5 +39,7 @@ public class RockSpawnerScript : MonoBehaviour
                                 Random.Range(minHeight, maxHeight), 
                                 transform.position.z), 
                     transform.rotation);
+
+        RockCount += 1;
     }
 }
