@@ -10632,6 +10632,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlaneRigidbody: {fileID: 902305163}
   planeLiftStrength: 9
+  planeDashStrength: 8
   logic: {fileID: 849264096}
   isAlive: 1
   moveSpeed: 1
