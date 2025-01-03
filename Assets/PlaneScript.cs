@@ -7,6 +7,7 @@ public class PlaneScript : MonoBehaviour
     public LogicScript logic;
     public bool isAlive;
     public float moveSpeed;
+    public ParticleSystem PlaneSmoke;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -42,6 +43,7 @@ public class PlaneScript : MonoBehaviour
     {
         isAlive = false;
         PlaneRigidbody.gravityScale = 3;
+        PlaneSmoke.Stop();
         Debug.Log("Collision!");
         logic.gameOver();        
     }
