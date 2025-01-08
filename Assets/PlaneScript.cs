@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlaneScript : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class PlaneScript : MonoBehaviour
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
-    {
+    {     
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
         PlaneRigidbody.gravityScale = 0;
         transform.position = new Vector3(-10,0);
@@ -44,7 +45,7 @@ public class PlaneScript : MonoBehaviour
 
         //if (Input.)
 
-        if (Input.GetKeyDown(KeyCode.Space) && isAlive)
+        /*if (Input.GetKeyDown(KeyCode.Space) && isAlive)
         {
             if (logic.isGameRunning == false) 
             { 
@@ -53,14 +54,14 @@ public class PlaneScript : MonoBehaviour
 
             PlaneRigidbody.gravityScale = 3;
             PlaneRigidbody.linearVelocity = Vector2.up * planeLiftStrength;
-        }
+        }*/
 
-        if (Input.GetKeyDown(KeyCode.RightArrow) && isAlive && logic.isNitroAvailable())
+        /*if (Input.GetKeyDown(KeyCode.RightArrow) && isAlive && logic.isNitroAvailable())
         {
             PlaneRigidbody.gravityScale = 3;
             PlaneRigidbody.linearVelocity = PlaneRigidbody.linearVelocity + (Vector2.right * planeDashStrength);
             logic.removeNitro(1);
-        }
+        }*/
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -71,5 +72,35 @@ public class PlaneScript : MonoBehaviour
         PlaneSmoke.Stop();
         logic.gameOver();
         PlaneAnimator.enabled = false;
+    }
+
+    void OnJump()
+    {
+        if (isAlive)
+        {
+            if (logic.isGameRunning == false)
+            {
+                logic.isGameRunning = true;
+            }
+
+            PlaneRigidbody.gravityScale = 3;
+            PlaneRigidbody.linearVelocity = Vector2.up * planeLiftStrength;
+        }
+    }
+
+    void OnNitro()
+    {
+        if (isAlive && logic.isNitroAvailable())
+        {
+            PlaneRigidbody.gravityScale = 3;
+            PlaneRigidbody.linearVelocity = PlaneRigidbody.linearVelocity + (Vector2.right * planeDashStrength);
+            logic.removeNitro(1);
+        }
+    }
+
+    void OnGlide ()
+    {
+        Debug.Log("GLIDE!!!");
+        
     }
 }
