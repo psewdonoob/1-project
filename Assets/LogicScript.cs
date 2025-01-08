@@ -15,6 +15,8 @@ public class LogicScript : MonoBehaviour
     public int maxNitroCount = 3;
     public int nitroCount = 0;
 
+    public bool isGameRunning = false;
+
     
     public void addScore(int scoreToAdd)
     {
@@ -69,11 +71,13 @@ public class LogicScript : MonoBehaviour
     public void restartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        isGameRunning = true;
     }
 
     public void gameOver()
     {
         gameOverScreen.SetActive(true);
+        isGameRunning = false;
     }       
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

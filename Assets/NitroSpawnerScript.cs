@@ -10,14 +10,13 @@ public class NitroSpawnerScript : MonoBehaviour
     private float positionY;
     public float heightOffset = 9;
 
-    public RockSpawnerScript rockSpawner;
+    private SpawnerScript Spawner;
     private int nextRock = 1;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        spawnRate = Random.Range(0.5f, 1.5f);
-        rockSpawner = GameObject.FindGameObjectWithTag("RockSpawner").GetComponent<RockSpawnerScript>();
+        Spawner = GameObject.FindGameObjectWithTag("Spawner").GetComponent<SpawnerScript>();
 
         minHeight = transform.position.y - heightOffset;
         maxHeight = transform.position.y + heightOffset;
@@ -26,10 +25,10 @@ public class NitroSpawnerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (rockSpawner.timer > spawnRate && rockSpawner.RockCount == nextRock)
-        {
+        if (Spawner.timer > spawnRate && Spawner.RockCount == nextRock)
+        {            
+            spawnRate = Random.Range(0.6f, 1.4f);
             spawnNitro();
-            spawnRate = Random.Range(0.5f, 1.5f);
             nextRock += Random.Range(1, 3);
         }
     }

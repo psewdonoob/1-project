@@ -283,8 +283,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -656, y: 300}
-  m_SizeDelta: {x: 365.8, y: 249.5}
+  m_AnchoredPosition: {x: 45, y: 373}
+  m_SizeDelta: {x: 609.5981, y: 249.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &249957167
 MonoBehaviour:
@@ -10747,6 +10747,7 @@ MonoBehaviour:
   Nitro: []
   maxNitroCount: 3
   nitroCount: 0
+  isGameStarted: 0
 --- !u!4 &849264097
 Transform:
   m_ObjectHideFlags: 0
@@ -11174,8 +11175,8 @@ GameObject:
   - component: {fileID: 1118086282}
   - component: {fileID: 1118086281}
   m_Layer: 0
-  m_Name: RockSpawner
-  m_TagString: RockSpawner
+  m_Name: Spawner
+  m_TagString: Spawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11192,11 +11193,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91ee7607683cd9348b4b93bfdaeb3fae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Rock: {fileID: 709410341678979306, guid: 3fe2ba2875f753d4983c183e50dbe55d, type: 3}
+  Rock: {fileID: 709410341678979306, guid: 3715cdde94442944eb18c9826379c147, type: 3}
+  Rocks: {fileID: 709410341678979306, guid: 3fe2ba2875f753d4983c183e50dbe55d, type: 3}
+  HardRocks: {fileID: 709410341678979306, guid: 9cea41d925d1b234d99ce3258a39cf7d, type: 3}
   RockCount: 0
-  spawnRate: 2
+  RockSpawnRate: 2
   timer: 0
-  heightOffset: 3
+  heightOffset: 1
 --- !u!4 &1118086282
 Transform:
   m_ObjectHideFlags: 0
@@ -11206,7 +11209,7 @@ Transform:
   m_GameObject: {fileID: 1118086280}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12, y: 1.85, z: 0}
+  m_LocalPosition: {x: 12, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11230,7 +11233,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1573429719
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11548,7 +11551,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Nitro: {fileID: 2850987501255964046, guid: d7c8123dd285d5849b211987840ef731, type: 3}
   heightOffset: 4
-  rockSpawner: {fileID: 0}
 --- !u!4 &1662672535
 Transform:
   m_ObjectHideFlags: 0

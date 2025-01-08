@@ -42,8 +42,15 @@ public class PlaneScript : MonoBehaviour
             transform.position = transform.position + (Vector3.left * moveSpeed * Mathf.Abs(transform.position.x)) * Time.deltaTime;
         }
 
+        //if (Input.)
+
         if (Input.GetKeyDown(KeyCode.Space) && isAlive)
         {
+            if (logic.isGameRunning == false) 
+            { 
+                logic.isGameRunning = true;
+            }
+
             PlaneRigidbody.gravityScale = 3;
             PlaneRigidbody.linearVelocity = Vector2.up * planeLiftStrength;
         }

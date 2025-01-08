@@ -6,10 +6,10 @@ TagManager:
   tags:
   - Logic
   - NitroSpawner
-  - RockSpawner
   - Nitro1
   - Nitro2
   - Nitro3
+  - Spawner
   layers:
   - Default
   - TransparentFX
