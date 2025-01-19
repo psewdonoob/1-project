@@ -1,0 +1,44 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/MainMenu.uss?fileID=7433441132597879392&amp;guid=9902f4393a18771479becc895256e7f6&amp;type=3#MainMenu" />
+    <engine:VisualElement name="Root" style="width: 100%; height: 100%; align-content: flex-start; align-self: auto; justify-content: flex-start; align-items: center;">
+        <engine:VisualElement name="Header" style="background-color: rgba(255, 136, 136, 0.2); width: 100%; height: 20%;">
+            <engine:VisualElement name="HeaderMargin" style="flex-grow: 1; height: 10%;" />
+            <engine:VisualElement name="HeaderContainer" style="flex-grow: 1;">
+                <engine:VisualElement name="LoafCountContainer" class="HeaderCountContainer" style="flex-grow: 1;">
+                    <engine:Button class="Box">
+                        <engine:VisualElement style="background-image: url(&quot;project://database/Assets/UI%20Assets/Icons/leaf.png?fileID=5781445747943558089&amp;guid=65ac7ef08bdff124daa5b5a1adcee796&amp;type=3#leaf_0&quot;); -unity-background-scale-mode: scale-to-fit; background-position-x: left 0; background-position-y: center 0; background-size: 80% 80%; padding-top: 66.64%;" />
+                        <engine:Label text="2251" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+                    </engine:Button>
+                </engine:VisualElement>
+                <engine:VisualElement name="FruitCountContainer" class="HeaderCountContainer" style="flex-grow: 1;">
+                    <engine:Button text="Button" class="Box" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="MainSpace" style="flex-grow: 1; height: 70%; width: 100%;" />
+        <engine:VisualElement name="Footer" style="flex-direction: row; height: 5%; flex-wrap: nowrap; justify-content: space-evenly; align-self: auto; align-content: flex-start; align-items: center; flex-grow: 0; width: 100%; padding-bottom: 0;">
+            <engine:VisualElement name="Icon" class="Footer_Icon">
+                <engine:Button name="Button" class="Footer_Button Footer_Button_Settings" style="-unity-background-scale-mode: scale-to-fit; flex-shrink: 1; flex-grow: 1;" />
+            </engine:VisualElement>
+            <engine:VisualElement name="Icon" class="Footer_Icon">
+                <engine:Button name="Button" class="Footer_Button Footer_Button_Tasks" style="-unity-background-scale-mode: scale-to-fit; flex-shrink: 1; flex-grow: 1;" />
+            </engine:VisualElement>
+            <engine:VisualElement name="Icon" class="Footer_Icon">
+                <engine:Button name="Button" class="Footer_Button Footer_Button_Geo" style="-unity-background-scale-mode: scale-to-fit; flex-shrink: 1; flex-grow: 1;" />
+            </engine:VisualElement>
+            <engine:VisualElement name="Icon" class="Footer_Icon">
+                <engine:Button name="Button" class="Footer_Button Footer_Button_Bugs" style="-unity-background-scale-mode: scale-to-fit; flex-shrink: 1; flex-grow: 1;" />
+            </engine:VisualElement>
+            <engine:VisualElement name="Icon" class="Footer_Icon">
+                <engine:Button name="Button" class="Footer_Button Footer_Button_Caterpillar" style="-unity-background-scale-mode: scale-to-fit; flex-shrink: 1; flex-grow: 1;" />
+            </engine:VisualElement>
+            <engine:VisualElement name="Icon" class="Footer_Icon">
+                <engine:Button name="Button" class="Footer_Button Footer_Button_Love" style="-unity-background-scale-mode: scale-to-fit; flex-shrink: 1; flex-grow: 1;" />
+            </engine:VisualElement>
+            <engine:VisualElement name="Icon" class="Footer_Icon">
+                <engine:Button name="Button" class="Footer_Button Footer_Button_Store" style="-unity-background-scale-mode: scale-to-fit; flex-shrink: 1; flex-grow: 1;" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="FooterMargin" style="flex-grow: 1; height: 2%; width: 100%;" />
+    </engine:VisualElement>
+</engine:UXML>
