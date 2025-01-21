@@ -4,15 +4,10 @@
         <engine:VisualElement name="Header" style="background-color: rgba(255, 136, 136, 0.2); width: 100%; height: 20%;">
             <engine:VisualElement name="HeaderMargin" style="flex-grow: 1; height: 10%;" />
             <engine:VisualElement name="HeaderContainer" style="flex-grow: 1;">
-                <engine:VisualElement name="LoafCountContainer" class="HeaderCountContainer" style="flex-grow: 1;">
-                    <engine:Button class="Box">
-                        <engine:VisualElement style="background-image: url(&quot;project://database/Assets/UI%20Assets/Icons/leaf.png?fileID=5781445747943558089&amp;guid=65ac7ef08bdff124daa5b5a1adcee796&amp;type=3#leaf_0&quot;); -unity-background-scale-mode: scale-to-fit; background-position-x: left 0; background-position-y: center 0; background-size: 80% 80%; padding-top: 66.64%;" />
-                        <engine:Label text="2251" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
-                    </engine:Button>
+                <engine:VisualElement name="LeafCountContainer" class="HeaderCountContainer" style="flex-grow: 1;">
+                    <engine:Button text="46876543" style="-unity-font-style: bold; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;" />
                 </engine:VisualElement>
-                <engine:VisualElement name="FruitCountContainer" class="HeaderCountContainer" style="flex-grow: 1;">
-                    <engine:Button text="Button" class="Box" />
-                </engine:VisualElement>
+                <engine:VisualElement name="FruitCountContainer" class="HeaderCountContainer" style="flex-grow: 1;" />
             </engine:VisualElement>
         </engine:VisualElement>
         <engine:VisualElement name="MainSpace" style="flex-grow: 1; height: 70%; width: 100%;" />
