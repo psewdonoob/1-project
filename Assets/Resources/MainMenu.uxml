@@ -1,17 +1,19 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/Resources/MainMenu.uss?fileID=7433441132597879392&amp;guid=9902f4393a18771479becc895256e7f6&amp;type=3#MainMenu" />
     <engine:VisualElement name="Root" style="width: 100%; height: 100%; align-content: flex-start; align-self: auto; justify-content: flex-start; align-items: center;">
-        <engine:VisualElement name="Header" style="background-color: rgba(255, 136, 136, 0.2); width: 100%; height: 20%;">
-            <engine:VisualElement name="HeaderMargin" style="flex-grow: 1; height: 10%;" />
-            <engine:VisualElement name="HeaderContainer" style="flex-grow: 1;">
-                <engine:VisualElement name="LeafCountContainer" class="HeaderCountContainer" style="flex-grow: 1;">
-                    <engine:Button text="46876543" style="-unity-font-style: bold; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;" />
+        <engine:VisualElement name="Header" style="background-color: rgba(255, 136, 136, 0); width: 100%; height: 15%;">
+            <engine:VisualElement name="HeaderMargin" style="flex-grow: 1; height: 5%;" />
+            <engine:VisualElement name="HeaderContainer" style="flex-grow: 1; height: 10%; padding-right: 3%;">
+                <engine:VisualElement name="LeafCountContainer" class="HeaderCountContainer" style="flex-grow: 1; height: 60%; flex-direction: row-reverse;">
+                    <engine:Button text="2550" style="-unity-font-style: bold; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-right-radius: 40px; border-bottom-left-radius: 40px; font-size: 45px; background-color: rgba(0, 0, 0, 0.39); color: rgb(255, 255, 255); -unity-text-outline-width: 0; padding-right: 25px; padding-left: 25px; padding-top: 15px; padding-bottom: 15px;" />
                 </engine:VisualElement>
-                <engine:VisualElement name="FruitCountContainer" class="HeaderCountContainer" style="flex-grow: 1;" />
+                <engine:VisualElement name="FruitCountContainer" class="HeaderCountContainer" style="flex-grow: 1; height: 40%;">
+                    <engine:Button text="39&#10;" style="-unity-font-style: bold; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-top-left-radius: 45%; border-top-right-radius: 45%; border-bottom-right-radius: 45%; border-bottom-left-radius: 45%; font-size: 35px; background-color: rgba(0, 0, 0, 0.39); color: rgb(255, 255, 255); padding-right: 20px; padding-left: 20px; padding-top: 12px; padding-bottom: 12px;" />
+                </engine:VisualElement>
             </engine:VisualElement>
         </engine:VisualElement>
-        <engine:VisualElement name="MainSpace" style="flex-grow: 1; height: 70%; width: 100%;" />
-        <engine:VisualElement name="Footer" style="flex-direction: row; height: 5%; flex-wrap: nowrap; justify-content: space-evenly; align-self: auto; align-content: flex-start; align-items: center; flex-grow: 0; width: 100%; padding-bottom: 0;">
+        <engine:VisualElement name="MainSpace" style="flex-grow: 1; height: 77%; width: 100%;" />
+        <engine:VisualElement name="Footer" style="flex-direction: row; height: 5%; flex-wrap: nowrap; justify-content: space-evenly; align-self: auto; align-content: flex-start; align-items: center; flex-grow: 0; width: 100%; padding-bottom: 0; padding-left: 3%; padding-right: 3%;">
             <engine:VisualElement name="Icon" class="Footer_Icon">
                 <engine:Button name="Button" class="Footer_Button Footer_Button_Settings" style="-unity-background-scale-mode: scale-to-fit; flex-shrink: 1; flex-grow: 1;" />
             </engine:VisualElement>
@@ -34,6 +36,6 @@
                 <engine:Button name="Button" class="Footer_Button Footer_Button_Store" style="-unity-background-scale-mode: scale-to-fit; flex-shrink: 1; flex-grow: 1;" />
             </engine:VisualElement>
         </engine:VisualElement>
-        <engine:VisualElement name="FooterMargin" style="flex-grow: 1; height: 2%; width: 100%;" />
+        <engine:VisualElement name="FooterMargin" style="flex-grow: 1; height: 3%; width: 100%;" />
     </engine:VisualElement>
 </engine:UXML>
