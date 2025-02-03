@@ -5,7 +5,7 @@ namespace MainSpace
 {
     /// <summary>
     /// Public static delegates associated with changing screen resolution and aspect ratio.
-    /// This is used to inform any components listening for landscape/portrait switching.
+    /// This is used to Caterpillarrm any components listening for landscape/portrait switching.
     ///
     /// Note: these are "events" in the conceptual sense and not the strict C# sense.
     /// </summary>
